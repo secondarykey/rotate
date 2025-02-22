@@ -1,0 +1,73 @@
+#app {
+    margin:0;
+    padding:0;  
+    height: 100vh;
+    text-align: center;
+}
+
+video {
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0px;
+    padding:0px;  
+    --wails-draggable: no-drag;
+}
+
+#videoLayer {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;  
+    z-index:500;
+}
+
+#systemMenu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: rgb(221, 220, 220);
+    justify-content: space-between;
+    height: 64px;
+    z-index:1000;
+}
+
+#systemMenu.show {
+    transition: 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+#systemMenu.hide {
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#leftMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    z-index:1100;
+}
+
+#rightMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0px;
+    z-index:1100;
+}
+
+#messageBar {
+    z-index:2000;
+}
+
+button:hover {
+    background-color: #222222 !important;
+}
